@@ -1,12 +1,7 @@
 <p align="center">
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this project, Wireshark is used to examine ICMP, SSH, DHCP, DNS, and RDP traffic to and from Azure Virtual Machines, while also configuring Network Security Groups to manage and secure network communication.</p>
-</p>
-
-Lab: Network Security Groups (NSGs) and Inspecting Traffic Between Azure VMs
-Objective
+<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure VMs</h1>
 
 In this lab, you will:
 
