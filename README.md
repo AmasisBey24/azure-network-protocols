@@ -1,5 +1,5 @@
 <p align="center">
-![hqdefault](https://github.com/user-attachments/assets/ed795ce1-ff57-44ce-a06a-72507e5b9461)
+<img width="480" height="259" alt="Azure NSG" src="https://github.com/user-attachments/assets/c2789a5e-d597-4493-92c1-4b0589926bba" />
 
 <p align="center">
 </p>
