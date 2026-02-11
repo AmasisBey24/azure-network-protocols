@@ -1,5 +1,5 @@
 <p align="center">
-![hqdefault](https://github.com/user-attachments/assets/a3947689-7e0f-4cdb-b80f-5ab5ff29354e)
+![hqdefault](https://github.com/user-attachments/assets/ed795ce1-ff57-44ce-a06a-72507e5b9461)
 
 <p align="center">
 </p>
