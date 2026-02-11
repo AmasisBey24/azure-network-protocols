@@ -61,8 +61,9 @@ Once inside the Virtual Machines page of Azure Portal, the Public IP Address to 
 </p>
 
 <img width="70%" height="70%" alt="507953357-b7ddee2b-cbdf-405b-a399-cc509f1a2f68-1 copy" src="https://github.com/user-attachments/assets/24ee65dc-d266-4ff0-8a4e-8392053957bd" />
-Once the IP Address for the Windows 11 VM has been obtained, hold the Windows Key + press "R" to open up the run command. In the box next to "Open", type the letters "mstsc" and press Enter. Mstsc stands for Microsoft Terminal Services Client. The Microsoft Terminal Services Client (MSTSC) is the client application built into Windows that uses the Remote Desktop Protocol (RDP) to establish a secure, graphical connection to a remote computer or server.
 
+Once the IP Address for the Windows 11 VM has been obtained, hold the Windows Key + press "R" to open up the run command. In the box next to "Open", type the letters "mstsc" and press Enter. Mstsc stands for Microsoft Terminal Services Client. The Microsoft Terminal Services Client (MSTSC) is the client application built into Windows that uses the Remote Desktop Protocol (RDP) to establish a secure, graphical connection to a remote computer or server.
+</p>
 <img width="532" height="302" alt="image" src="https://github.com/user-attachments/assets/17c5d870-4be1-4233-abac-53b2d301e0b6" />
 
 The Windows 11 Virtual Machine will be accessed using the VM's Public IP Address in Remote Desktop Connection
