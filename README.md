@@ -1,5 +1,5 @@
 <p align="center">
-<img width="70%" height="70%" alt="Azure NSG" src="https://github.com/user-attachments/assets/c2789a5e-d597-4493-92c1-4b0589926bba" />
+<img width="40%" height="40%" alt="Azure NSG" src="https://github.com/user-attachments/assets/c2789a5e-d597-4493-92c1-4b0589926bba" />
 
 <p align="center">
 </p>
