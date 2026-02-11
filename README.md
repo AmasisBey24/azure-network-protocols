@@ -5,24 +5,23 @@
 In this project, Wireshark is used to examine ICMP, SSH, DHCP, DNS, and RDP traffic to and from Azure Virtual Machines, while also configuring Network Security Groups to manage and secure network communication.</p>
 </p>
 
-- <b> ICMP (Internet Control Message Protocol):</b> ICMP is a network protocol used for diagnostics and error reporting, such as pinging to check if a device is reachable.
+Lab: Network Security Groups (NSGs) and Inspecting Traffic Between Azure VMs
+Objective
 
-- <b> SSH (Secure Shell):</b> SSH provides secure, encrypted remote access to devices, allowing users to manage systems over a network.
+In this lab, you will:
 
-- <b>DHCP (Dynamic Host Configuration Protocol):</b> DHCP automatically assigns IP addresses and network settings to devices, simplifying network connectivity.
+- Create two Azure Virtual Machines
 
-- <b>DNS (Domain Name System):</b> DNS converts human-readable domain names into IP addresses, enabling devices to locate websites or services on the internet.
+- Configure a Network Security Group (NSG)
 
-- <b>RDP (Remote Desktop Protocol):</b> RDP is a proprietary protocol developed by Microsoft that allows a user to connect to and control another computer remotely over a network connection, providing a graphical interface.
-</p>
+- Allow and deny specific traffic
+
+- Capture traffic using Wireshark
+
+Analyze ICMP, SSH, DHCP, DNS, and RDP traffic
  
-Wireshark is a free tool that captures and analyzes network traffic, like observing the data packets traveling between computers on a network. It helps IT support staff troubleshoot issues, such as slow connections or errors, by showing detailed network activity. Think of it like a security camera recording and reviewing all the activity in a busy office to spot problems.
+Wireshark is a free tool that lets you see the data moving between computers on a network. It helps IT staff find problems like slow connections or errors by showing exactly what traffic is happening.
 </p>
-
-
-<h2>Video Demonstration</h2>
-
-- ### [Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines](https://www.youtube.com/watch?v=U1DGOzM_fmI)
 
 <h2>Environments and Technologies Used</h2>
 
