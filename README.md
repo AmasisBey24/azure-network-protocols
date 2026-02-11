@@ -48,10 +48,12 @@ Wireshark is a free tool that lets you see the data moving between computers on 
 Note: This demonstration uses a Virtual Machine created in a previous project: [here](https://github.com/AmasisBey24/configure-ad)
 </p>
 
-<img width="1674" height="283" alt="image" src="https://github.com/user-attachments/assets/7bf845e4-158b-4672-a735-93c7c1cf5e15" />
+<img width="80%" height="80%" alt="542813134-275f4117-6028-44ed-a9c5-d46a705ae204 copy" src="https://github.com/user-attachments/assets/1cdede9e-ee18-41ef-812d-74083115ef8d" />
+
 This project will begin by selecting "Virtual Machines" on the Azure Portal home page.
 
-<img width="1187" height="434" alt="image" src="https://github.com/user-attachments/assets/fc5cf89c-e5b3-4e03-b343-ba6e2c8cb735" />
+<img width="80%" height="80%" alt="507952292-fc5cf89c-e5b3-4e03-b343-ba6e2c8cb735 copy" src="https://github.com/user-attachments/assets/30269140-8c2f-48e0-8610-0738439c2f50" />
+
 Once inside the Virtual Machines page of Azure Portal, the Public IP Address to the Windows 11 Virtual Machine can be obtained. This is the VM that will be used for this demonstration. 
 </p>
 
