@@ -64,29 +64,29 @@ Once inside the Virtual Machines page of Azure Portal, the Public IP Address to 
 
 Once the IP Address for the Windows 11 VM has been obtained, hold the Windows Key + press "R" to open up the run command. In the box next to "Open", type the letters "mstsc" and press Enter. Mstsc stands for Microsoft Terminal Services Client. The Microsoft Terminal Services Client (MSTSC) is the client application built into Windows that uses the Remote Desktop Protocol (RDP) to establish a secure, graphical connection to a remote computer or server.
 </p>
-<img width="532" height="302" alt="image" src="https://github.com/user-attachments/assets/17c5d870-4be1-4233-abac-53b2d301e0b6" />
+<img width="70%" height="70%" alt="505688334-17c5d870-4be1-4233-abac-53b2d301e0b6 copy" src="https://github.com/user-attachments/assets/15a08c9c-2b34-4b0a-924f-9e36b7dca8df" />
 
 The Windows 11 Virtual Machine will be accessed using the VM's Public IP Address in Remote Desktop Connection
 
-<img width="557" height="527" alt="image" src="https://github.com/user-attachments/assets/560d59c6-3836-42d4-a145-c3bf5ee35176" />
+<img width="70%" height="70%" alt="505688406-560d59c6-3836-42d4-a145-c3bf5ee35176 copy" src="https://github.com/user-attachments/assets/8a3df6ab-1956-4f31-bfc3-413a55977a14" />
 
 Credentials will be required to log into the Windows 11 VM, which were established when creating the VM.
 
-<img width="511" height="487" alt="image" src="https://github.com/user-attachments/assets/75dc4a55-7d6b-418a-81f4-81078766c72c" />
+<img width="70%" height="70%" alt="505688635-75dc4a55-7d6b-418a-81f4-81078766c72c copy" src="https://github.com/user-attachments/assets/b3148f81-5291-4645-8421-c6242876f41a" />
 
 After logging in, Windows Security will prompt a warning message that the security certificate cannot be verified. Click "Yes" to continue to Windows 11 VM.
 
-<img width="1917" height="980" alt="image" src="https://github.com/user-attachments/assets/06f4f884-8658-4994-8bbc-df888e53975c" />
+<img width="70%" height="70%" alt="505689062-06f4f884-8658-4994-8bbc-df888e53975c copy" src="https://github.com/user-attachments/assets/b8c0e62d-28d1-4fd3-b212-80fb4e09d81e" />
 
 Once inside the Windows 11 VM, Wireshark will be downloaded from the official website at https://www.wireshark.org/download.html. 
 
 The Windows x64 Installer will be selected for download.
 
-<img width="1735" height="1463" alt="image" src="https://github.com/user-attachments/assets/7a0a208c-2ea3-4979-b858-5a88bd8df825" />
+<img width="70%" height="70%" alt="505689997-7a0a208c-2ea3-4979-b858-5a88bd8df825 copy" src="https://github.com/user-attachments/assets/03cfaadd-e0c2-4608-bf7e-ae1c861017c3" />
 
 Open up the Wireshark installation wizard and click "Next" through each step until Wireshark is installed.
 
-<img width="939" height="729" alt="image" src="https://github.com/user-attachments/assets/46fbca66-8647-4060-af4c-7f581de73078" />
+<img width="70%" height="70%" alt="505690065-46fbca66-8647-4060-af4c-7f581de73078 copy" src="https://github.com/user-attachments/assets/273cc789-1618-4426-92e2-fd27204b21a3" />
 
 In Wireshark, the Ethernet options you select for packet capture are referred to as "Interfaces" or "Network Interfaces" on the homepage (also called the Capture Interfaces dialog). These are the network adapters or Ethernet devices (e.g., eth0, eth1, or specific network card names) available on your system that Wireshark can use to capture packets. You choose one or more interfaces to start capturing network traffic.
 
@@ -94,11 +94,11 @@ Hover your mouse over the Interfaces to see which one has the Private IP Address
 
 Double click the Interface to begin the packet capture.
 
-<img width="1192" height="519" alt="image" src="https://github.com/user-attachments/assets/73e806ba-fcef-4a59-8f47-c4bad4ba90fd" />
+<img width="70%" height="70%" alt="505690341-73e806ba-fcef-4a59-8f47-c4bad4ba90fd copy" src="https://github.com/user-attachments/assets/097f4041-cb79-42cc-a98a-734fbb5b2c10" />
 
 The Private IP Address can be found in the directory page for the Windows 11 VM in the Azure Virtual Machine Portal.
 
-<img width="932" height="722" alt="image" src="https://github.com/user-attachments/assets/f8a6792a-ab91-444e-9fd7-6bdb170d5f18" />
+<img width="70%" height="70%" alt="505690394-f8a6792a-ab91-444e-9fd7-6bdb170d5f18 copy" src="https://github.com/user-attachments/assets/cdf1d1d8-a91b-47f0-bf76-f980443ea919" />
 
 Once the packet capture has begun, an endless flow of packet traffic will begun to appear in Wireshark.
 
