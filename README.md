@@ -106,23 +106,23 @@ Once the packet capture has begun, an endless flow of packet traffic will begun 
 
 ICMP (Internet Control Message Protocol) traffic consists of control and error-reporting messages used by network devices to communicate status, errors, or diagnostic information, such as ping requests and replies or destination unreachable notifications. It operates at the network layer and is essential for troubleshooting and network management.
 
-<img width="930" height="721" alt="image" src="https://github.com/user-attachments/assets/34c81e51-e4a4-471b-ad2f-a46ed8f483cc" />
+<img width="80%" height="80%" alt="505690598-34c81e51-e4a4-471b-ad2f-a46ed8f483cc copy" src="https://github.com/user-attachments/assets/e80c9eaa-282c-46fe-b28c-ffd6c27929e9" />
 
 This step of the project will begin by using the search bar inside Wireshark, which is utilized to filter traffic for specific ports or protols. In this case, the filter will be used for filtering out ICMP traffic.
 
-<img width="1861" height="733" alt="image" src="https://github.com/user-attachments/assets/012103cf-3d96-428d-b130-5a15deddc229" />
+<img width="80%" height="80%" alt="505690749-012103cf-3d96-428d-b130-5a15deddc229 copy" src="https://github.com/user-attachments/assets/dbafb343-5cf8-4f32-9e05-e24b05b97db3" />
 
 The Linux VM's Private IP Address can be found in the Virtual Machines page of the Azure Portal. This IP Address will be utilized for testing ICMP traffic, as it will be pinged by the Windows 11 VM.
 
-<img width="967" height="895" alt="image" src="https://github.com/user-attachments/assets/59307fd4-6085-4e3c-a401-af02218850a0" />
+<img width="80%" height="80%" alt="505690787-59307fd4-6085-4e3c-a401-af02218850a0 copy" src="https://github.com/user-attachments/assets/7ab3f467-7149-4b28-ab78-11c4c95f10e0" />
 
 Inside the Windows 11 VM, Powershell will be opened up for the ping test.
 
-<img width="1475" height="750" alt="image" src="https://github.com/user-attachments/assets/5abb462f-ad78-4f5f-8b7d-9d2325301d8e" />
+<img width="80%" height="80%" alt="505690875-5abb462f-ad78-4f5f-8b7d-9d2325301d8e copy" src="https://github.com/user-attachments/assets/4c83056d-df5b-4e5f-a253-e4eadcf6d16c" />
 
 Once Powershell is opened, "ping 172.16.1.4" into the command prompt.
 
-<img width="1919" height="689" alt="image" src="https://github.com/user-attachments/assets/93bb7a71-c3ab-4970-80fa-e845d9b9cc2b" />
+<img width="80%" height="80%" alt="505691210-93bb7a71-c3ab-4970-80fa-e845d9b9cc2b copy" src="https://github.com/user-attachments/assets/e30ba827-4b33-4c03-a84f-df92c2145753" />
 
 Ping was successful. The Wireshark packet capture shows the ICMP traffic for the ping requests and replies between the two VMs.
 
