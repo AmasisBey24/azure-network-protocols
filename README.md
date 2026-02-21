@@ -136,17 +136,17 @@ In this step of the project, the Linux VM will have a Firewall configured in it'
 
 In Microsoft Azure, a Network Security Group (NSG) is called so to reflect its role as a cloud-native, flexible, and programmable set of rules that control inbound and outbound network traffic for Azure resources, functioning similarly to a traditional firewall. The term "group" emphasizes that it’s a collection of security rules applied to virtual networks or specific resources like virtual machines, distinguishing it from a physical firewall appliance by focusing on its logical, policy-based nature in a cloud environment. This naming aligns with Azure’s terminology for managing security at scale across virtual networks.
 
-<img width="1872" height="784" alt="image" src="https://github.com/user-attachments/assets/7607e730-9bec-4986-9c79-e00ec491f41d" />
+<img width="80%" height="80%" alt="505692382-7607e730-9bec-4986-9c79-e00ec491f41d copy" src="https://github.com/user-attachments/assets/1aa0fde6-2f7a-4c29-91d4-78b8e303428d" />
 
 The Linux NSG can be access in the Azure Portal. Opening up the Linux VM directory page, click the drop down arrow next to "Networking", then click "Network settings". 
 
 Once inside the Network settings, click on "Linux-VM-nsg" to access the Network Security Group for the Linux VM.
 
-<img width="1898" height="855" alt="image" src="https://github.com/user-attachments/assets/91ea937e-3d49-4abd-b405-5c797e3a0c87" />
+<img width="80%" height="80%" alt="505693557-91ea937e-3d49-4abd-b405-5c797e3a0c87 copy" src="https://github.com/user-attachments/assets/ef9fdaf3-c108-44a9-a898-fe9c960eefb9" />
 
 View of inside the Linux VM Network Security Group.
 
-<img width="1898" height="886" alt="image" src="https://github.com/user-attachments/assets/96bcbb50-fbda-4bba-969d-05f11470c09a" />
+<img width="80%" height="80%" alt="505694907-96bcbb50-fbda-4bba-969d-05f11470c09a copy" src="https://github.com/user-attachments/assets/d60b7f05-1a4a-40ed-bb43-1b73be915519" />
 
 To add the ICMP Firewall, click the "Settings" drop down box ---> click "Inbound Security Rules" ---> then click "Add"
 
@@ -160,11 +160,11 @@ The rule requires a name, so "DenyPing" is the name of the rule being put into p
 
 Once this is filled out, click "Add" to create the new security rule.
 
-<img width="1559" height="416" alt="image" src="https://github.com/user-attachments/assets/c6386274-d7d4-437c-bb73-86adc73c000a" />
+<img width="80%" height="80%" alt="505695173-c6386274-d7d4-437c-bb73-86adc73c000a copy" src="https://github.com/user-attachments/assets/682b9462-1ac3-4031-9625-982dbf861613" />
 
 The ICMP Firewall has been successfully added into the Network Security Group for the Linux VM.
 
-<img width="1916" height="471" alt="image" src="https://github.com/user-attachments/assets/a7424481-e415-46ed-8a3e-c31fa486f5df" />
+<img width="80%" height="80%" alt="505696232-a7424481-e415-46ed-8a3e-c31fa486f5df copy" src="https://github.com/user-attachments/assets/ab04c5d7-851e-41bb-a8d3-5fd6e145a54c" />
 
 Returning to the Windows 11 VM, the Linux VM will be pinged using Powershell. 
 
