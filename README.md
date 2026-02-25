@@ -175,23 +175,23 @@ It can be observed in Wireshark that ping requets were sent but there is no repl
 <h2>Step 4 - Observe SSH Traffic </h2>
 SSH (Secure Shell) traffic refers to network data transmitted over the SSH protocol, which provides a secure, encrypted channel for remote access, file transfers, and command execution between devices. It typically uses TCP port 22 and is commonly used for managing servers or secure file transfers via tools like SCP or SFTP. The encryption ensures that data, such as login credentials and commands, remains confidential and protected from interception.
 
-<img width="872" height="193" alt="image" src="https://github.com/user-attachments/assets/b638f3d8-b65d-4081-9e67-87951d30b6bc" />
+<img width="80%" height="80%" alt="507955831-b638f3d8-b65d-4081-9e67-87951d30b6bc copy" src="https://github.com/user-attachments/assets/7a1daf69-d7a2-4c7b-b6be-191c2e7d6d76" />
 
 This step in the project will begin by changing the Wireshark filter from "icmp" to "ssh" to filter for SSH traffic.
 
-<img width="1475" height="225" alt="image" src="https://github.com/user-attachments/assets/aa52ac6b-cbdf-4167-a4a7-e7f0f01bf547" />
+<img width="80%" height="80%" alt="505697497-aa52ac6b-cbdf-4167-a4a7-e7f0f01bf547 copy" src="https://github.com/user-attachments/assets/cdfa410d-c2cb-4014-9116-f1dd9729035f" />
 
 Using Powershell in the Windows 11 VM, the Linux VM will be connected into using SSH. 
 
 The command typed will be "ssh Linux-VM@172.16.1.4" --- Linux-VM is the username for the Linux VM and 172.16.1.4 is the Private IP Address for the Linux VM.
 
-<img width="1470" height="329" alt="image" src="https://github.com/user-attachments/assets/10baf665-23fb-48d3-b62a-02f6d6549828" />
+<img width="80%" height="80%" alt="505698048-10baf665-23fb-48d3-b62a-02f6d6549828 copy" src="https://github.com/user-attachments/assets/fc55dc91-c1b6-4c2a-93ea-b868e4d81dba" />
 
 Once the command was entered, Powershell verifies that the connection to the Linux VM is to be made. Type "Yes"
 
 Next, the password for the Linux VM user will be requested before the connection can be made.
 
-<img width="1903" height="784" alt="image" src="https://github.com/user-attachments/assets/03322ba0-77cf-4b0f-92f8-aab411858f0b" />
+<img width="80%" height="80%" alt="505698157-03322ba0-77cf-4b0f-92f8-aab411858f0b copy" src="https://github.com/user-attachments/assets/bbb31509-a3d5-4ffb-9c51-d154fb0e7a6f" />
 
 The connection was successfully made and Wireshark captured all the SSH network traffic that occured during the process.
 
