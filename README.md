@@ -199,12 +199,12 @@ The connection successfully logged into the Linux VM via SSH, as indicated by th
 
 <h2>Step 5 - Observe DHCP Traffic </h2>
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/abc6b151-bc04-4eca-ae1a-14c143d011b3" /></p>
+<img width="80%" height="80%" alt="DHCP process overview and steps" src="https://github.com/user-attachments/assets/cec9da81-1944-4893-a8cd-560e8846bafd" />
 
 
 DHCP (Dynamic Host Configuration Protocol) traffic consists of network messages exchanged between a DHCP client and server to automatically assign and manage IP addresses and network configuration details, such as subnet masks and gateways. It typically involves a four-step process (Discover, Offer, Request, Acknowledge) to lease an IP address to a device. This traffic is essential for devices to join a network without manual configuration. DHCP uses UDP ports 67 and 68.
 
-<img width="954" height="169" alt="image" src="https://github.com/user-attachments/assets/666db282-512d-4e45-bafd-e56729bd5b89" />
+<img width="80%" height="80%" alt="505698573-666db282-512d-4e45-bafd-e56729bd5b89 copy" src="https://github.com/user-attachments/assets/0945b1af-a421-4827-84e6-5812242eed7e" />
 
 This step will begin by changing the Wireshark filter from SSH to UDP ports 67 and 68.
 
@@ -212,7 +212,7 @@ The filter used will be "udp.port == 67 || udp.port == 68"
 
 The Wireshark filter udp.port == 67 || udp.port == 68 is written this way to specify that it should capture UDP packets where either the source or destination port is 67 (DHCP server) or 68 (DHCP client). The || operator means "logical OR" in Wireshark's filter syntax, allowing the filter to match packets that satisfy either condition. This syntax ensures both client-to-server and server-to-client DHCP traffic is captured.
 
-<img width="1423" height="471" alt="image" src="https://github.com/user-attachments/assets/2623d27a-2535-4ccb-8bbf-c86dbef6ab18" />
+<img width="80%" height="80%" alt="505698822-2623d27a-2535-4ccb-8bbf-c86dbef6ab18 copy" src="https://github.com/user-attachments/assets/e74e560a-39de-4429-acbd-88d53dd9b712" />
 
 To observe DHCP traffic, the IP address on the Windows 11 VM must be released and renewed to trigger the DHCP process, which involves the client (VM) sending a request to the DHCP server and receiving a new IP address. Releasing the current IP address (e.g., using ipconfig /release) forces the VM to initiate a new DHCP handshake (Discover, Offer, Request, Acknowledge), generating observable network traffic on UDP ports 67 and 68. Without this, the VM may retain its existing IP lease, producing no DHCP traffic to capture.
 
@@ -220,19 +220,19 @@ In order to do this, a script must be created and then deployed within Powershel
 
 The script will be created in Notepad with the commands "ipconfig /release" to release the current Private IP address and "ipconfig /renew" to give the Windows 11 VM a new Private IP address.
 
-<img width="938" height="591" alt="image" src="https://github.com/user-attachments/assets/4718c839-25b7-42e4-be95-f6cbf2cca546" />
+<img width="80%" height="80%" alt="505699036-4718c839-25b7-42e4-be95-f6cbf2cca546 copy" src="https://github.com/user-attachments/assets/de0cdfb0-4687-4538-9cbc-cf07c87f8f36" />
 
 The script will be saved the "C:\" drive as "DHCP.bat". 
 
 A .bat file is a batch file used in Windows to execute a series of commands automatically in the Command Prompt or PowerShell. It contains plain-text commands, such as those to run programs or configure network settings, and is executed by double-clicking or calling it from a terminal. In this project, the DHCP.bat file will automate the release and renewal of an IP address to trigger DHCP traffic.
 
-<img width="1465" height="597" alt="image" src="https://github.com/user-attachments/assets/4b07b08c-6de8-49d2-b82c-873bcf69e02f" />
+<img width="80%" height="80%" alt="505699201-4b07b08c-6de8-49d2-b82c-873bcf69e02f copy" src="https://github.com/user-attachments/assets/98598509-67d6-42f2-bbda-39322e8cc86d" />
 
 The DHCP.bat was verified by using the "cd C:\" command to change the directory to the C:\ folder.
 
 Then the command "dir" was entered to show the directory for the C:\. The DHCP.bat file is present in the folder's directory.
 
-<img width="260" height="67" alt="image" src="https://github.com/user-attachments/assets/981b8112-3ffb-499e-a887-2b3647562936" />
+<img width="80%" height="80%" alt="505699424-454bb8c1-2c62-42d7-9b93-167c786a0ce8 copy" src="https://github.com/user-attachments/assets/c6550beb-bc14-4dd3-9875-de9e876ff31d" />
 
 The command ".\dhcp.bat" was entered into Powershell to run the DHCP script; causing the IP address to be released and then renewed.
 
