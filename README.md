@@ -232,11 +232,11 @@ The DHCP.bat was verified by using the "cd C:\" command to change the directory 
 
 Then the command "dir" was entered to show the directory for the C:\. The DHCP.bat file is present in the folder's directory.
 
-<img width="80%" height="80%" alt="505699424-454bb8c1-2c62-42d7-9b93-167c786a0ce8 copy" src="https://github.com/user-attachments/assets/c6550beb-bc14-4dd3-9875-de9e876ff31d" />
+<img width="80%" height="80%" alt="505699242-981b8112-3ffb-499e-a887-2b3647562936 copy" src="https://github.com/user-attachments/assets/e4860e64-c5a1-4d59-a5be-19bc890d830b" />
 
 The command ".\dhcp.bat" was entered into Powershell to run the DHCP script; causing the IP address to be released and then renewed.
 
-<img width="1913" height="1016" alt="image" src="https://github.com/user-attachments/assets/454bb8c1-2c62-42d7-9b93-167c786a0ce8" />
+<img width="80%" height="80%" alt="505699424-454bb8c1-2c62-42d7-9b93-167c786a0ce8 copy" src="https://github.com/user-attachments/assets/edac8c33-d9c1-4f03-83a9-9ff43cb8ed0f" />
 
 The DHCP script was successfully deployed and the DHCP traffic is observable in Wireshark. 
 
