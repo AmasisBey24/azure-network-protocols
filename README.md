@@ -265,11 +265,12 @@ The command was successfully executed and Wireshark captured the DNS traffic for
 
 RDP traffic refers to the network data exchanged between a client device and a server to establish and maintain a Remote Desktop Protocol (RDP) session. When a user connects to a remote computer , the client sends a request to the server, and the server responds by displaying its desktop interface, enabling the user to interact with the remote machine as if they were sitting in front of it. This traffic is essential for remote administration, technical support, and virtual desktop infrastructure, and typically occurs over TCP port 3389. </p>
 
-<img width="690" height="119" alt="image" src="https://github.com/user-attachments/assets/8c0ace2e-cae9-464a-ad00-09e3b0d3ae03" />
+<img width="80%" height="80%" alt="507957341-8c0ace2e-cae9-464a-ad00-09e3b0d3ae03 copy" src="https://github.com/user-attachments/assets/4f4019bc-893b-4313-885b-cf8f261d42c4" />
 </p>
 We will begin to observe RDP traffic by changing the Wireshark packet filter to "tcp.port == 3389" then press Enter.
 </p>
-<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/1b77e129-d326-4119-a172-d883c18ade8e" /> </p>
+<img width="80%" height="80%" alt="507966163-1b77e129-d326-4119-a172-d883c18ade8e copy" src="https://github.com/user-attachments/assets/546785f0-ded5-4519-b2d2-4080be38f15c" />
+</p>
 The RDP traffic constantly appears to be "spamming" data in Wireshark because its primary job is to keep the remote screen perfectly updated . Even when you're not actively moving the mouse or typing, the server is continuously sending small, frequent packets representing minor changes like a blinking cursor, a clock tick, or background animations. Additionally, RDP uses control and keep-alive messages to constantly monitor and adapt to the network's quality, and the underlying TCP protocol generates a continuous stream of Acknowledgement (ACK) packets for every piece of data received, all of which contribute to the high packet count you see in the capture.
 </p>
 <h2>Step 8 - Project Clean Up</h2>
