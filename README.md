@@ -277,25 +277,29 @@ The RDP traffic constantly appears to be "spamming" data in Wireshark because it
 
 Virtual Machines cost money to run, so it is important to delete them and all their data after use. </p>
 
-<img width="1300" height="389" alt="image" src="https://github.com/user-attachments/assets/308937e9-41d8-4930-9360-ffe3adf27495" />
+<img width="80%" height="80%" alt="507967015-308937e9-41d8-4930-9360-ffe3adf27495 copy" src="https://github.com/user-attachments/assets/391c4fc1-8b2f-4bb2-9aff-b07aaade16f1" />
 </p>
 The first thing that will be done is to type "Resource Groups" in the Azure Portal search bar. </p>
 An Azure resource group is a logical container that holds related resources for an Azure solution, such as virtual machines, databases, and storage accounts. It allows you to manage the lifecycle (like deployment, updates, and deletion) of these resources together as a single unit.</p>
 
-<img width="1887" height="579" alt="image" src="https://github.com/user-attachments/assets/33bb0ff6-5f5f-48ac-b619-ea1e108a6c5b" /> </p>
+<img width="80%" height="80%" alt="507967827-33bb0ff6-5f5f-48ac-b619-ea1e108a6c5b copy" src="https://github.com/user-attachments/assets/bbd67491-c4a2-4515-a200-c4587449ae84" /> 
+</p>
+
 Once inside the resource groups portal, locate the resource group that virtual machines were created in. </p>
 
 
-<img width="1191" height="720" alt="image" src="https://github.com/user-attachments/assets/8e73408f-7ae7-4980-bf7c-0845eb9a1b0f" /> </p>
+<img width="80%" height="80%" alt="507968356-8e73408f-7ae7-4980-bf7c-0845eb9a1b0f copy" src="https://github.com/user-attachments/assets/88c04911-791f-49f1-bd9d-ff12d1e27cba" />
+ </p>
 
 Once the resource group has been opened up, locate the button that says "Delete resource group" and click on it. </p>
 
-<img width="722" height="812" alt="image" src="https://github.com/user-attachments/assets/74da59c1-9738-4495-8ba7-6ab740482e19" /> </p>
+<img width="80%" height="80%" alt="507969281-74da59c1-9738-4495-8ba7-6ab740482e19 copy" src="https://github.com/user-attachments/assets/78961fe7-44e3-47d4-8676-c8bafbd7865c" />
+ </p>
 
 Inside the "Delete resource group" page, click on the "Copy" icon next to the resource group name. Then paste the the resource group name into the section that says "Enter resource group name to confirm deletion". Once this is done, then click on "Delete", and the resource groups with the virtual machines and all of their data will be deleted.
 
 <h2>Conclusion</h2>
-This project effectively demonstrated the use of Wireshark to capture and analyze critical network protocols — ICMP, SSH, DHCP, DNS, and RDP — within Microsoft Azure Virtual Machines, while showcasing the power of Network Security Groups to control and secure traffic flow. By observing live packet exchanges, configuring firewall rules to block ICMP pings, and triggering protocol-specific traffic through commands like ping, SSH login, IP renewal, and DNS lookups, we gained practical insight into how these protocols operate in a cloud environment and how NSGs function as virtual firewalls to enforce security policies. The continuous RDP traffic highlighted the protocol’s role in maintaining real-time remote desktop sessions, reinforcing the importance of monitoring and managing network activity for troubleshooting, security, and performance optimization in Azure deployments.
+This demonstrate how Wireshark can be used to capture and analyze important network protocols — ICMP, SSH, DHCP, DNS, and RDP — within Microsoft Azure Virtual Machines. It also showed how Network Security Groups (NSGs) control and protect network traffic. By observing live network packets, creating firewall rules to block ICMP ping requests, and generating traffic using commands such as ping, SSH login, IP address renewal, and DNS lookups, we gained hands-on experience with how these protocols work in a cloud environment. The constant RDP traffic showed how remote desktop sessions stay active in real time, highlighting the importance of monitoring network activity for troubleshooting, security, and performance optimization in Azure systems.
 
 
 
