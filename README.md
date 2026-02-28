@@ -249,15 +249,15 @@ This step of the project revolves around observing DNS traffic.
 
 DNS traffic refers to the network data exchanged between a client device and a Domain Name System (DNS) server to resolve domain names (e.g., www.example.com) into IP addresses. When a user attempts to access a website, the client sends a DNS query, and the server responds with the corresponding IP address, enabling the connection. This traffic is essential for navigating the internet and typically occurs over UDP port 53.
 
-<img width="1025" height="131" alt="image" src="https://github.com/user-attachments/assets/0355c2b6-9c8f-4381-b6f1-cfbf90d17aa9" />
+<img width="80%" height="80%" alt="505699706-0355c2b6-9c8f-4381-b6f1-cfbf90d17aa9 copy" src="https://github.com/user-attachments/assets/0a2363ca-e1e6-414d-9cf6-7f208eb00628" />
 
 The first step of this process is to change the Wireshark filter to "dns"
 
-<img width="558" height="43" alt="image" src="https://github.com/user-attachments/assets/6b505cf6-1bc9-4302-a02e-fb7feee5ce18" />
+<img width="80%" height="80%" alt="505699851-6b505cf6-1bc9-4302-a02e-fb7feee5ce18 copy" src="https://github.com/user-attachments/assets/43048324-0a84-41f0-8a38-62ff8edb04ef" />
 
 In Powershell, the command "nslookup linkedin.com" is typed in. Once this command is executed, PowerShell initiates a DNS query to resolve the domain name linkedin.com into an IP address.
 
-<img width="1906" height="706" alt="image" src="https://github.com/user-attachments/assets/5cdeda68-9d72-48df-9af4-490109f067ed" />
+<img width="80%" height="80%" alt="505699978-5cdeda68-9d72-48df-9af4-490109f067ed copy" src="https://github.com/user-attachments/assets/986e3be1-7ff4-4718-9ebb-c5ddf5c76d7d" />
 
 The command was successfully executed and Wireshark captured the DNS traffic for this process.
 
