@@ -6,9 +6,9 @@
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure VMs</h1>
 Configured and tested Azure Network Security Groups (NSGs) to control inbound and outbound traffic between virtual machines.<br />
-</h2>
 
-<h2>In this lab, you will:</h2>
+
+In this lab, you will:
 
 - Create two Azure Virtual Machines
 
